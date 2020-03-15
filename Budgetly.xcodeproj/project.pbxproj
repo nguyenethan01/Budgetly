@@ -141,11 +141,11 @@
 			children = (
 				3D5BB377241744B90032ADE8 /* AppDelegate.swift */,
 				3D5BB379241744B90032ADE8 /* SceneDelegate.swift */,
+				BA9C482D241EF0E200E4AFEF /* StartScreenViewController.swift */,
 				3D5BB37D241744B90032ADE8 /* Main.storyboard */,
 				3D5BB380241744BC0032ADE8 /* Assets.xcassets */,
 				3D5BB382241744BC0032ADE8 /* LaunchScreen.storyboard */,
 				3D5BB385241744BC0032ADE8 /* Info.plist */,
-				BA9C482D241EF0E200E4AFEF /* StartScreenViewController.swift */,
 			);
 			path = Budgetly;
 			sourceTree = "<group>";
