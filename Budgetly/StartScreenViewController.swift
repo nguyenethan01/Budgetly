@@ -20,7 +20,10 @@ class StartScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginSegue", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

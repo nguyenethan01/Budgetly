@@ -38,6 +38,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33I-00-Trv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -45,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="getStartedButton" destination="im1-9m-rCJ" id="dp5-JU-Vxr"/>
+                        <segue destination="oxb-cf-gfL" kind="show" identifier="loginSegue" id="Mxh-38-7Vj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,7 +60,7 @@
             <objects>
                 <viewController id="naA-q6-koh" customClass="LoginViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qlo-bh-ohg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-ea-GU5">
@@ -73,6 +77,9 @@
                                         <integer key="value" value="2000"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSignIn:" destination="naA-q6-koh" eventType="touchUpInside" id="8Y4-IH-z7m"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7J-a1-BnN" userLabel="usernameField">
                                 <rect key="frame" x="79" y="228" width="228" height="34"/>
@@ -110,6 +117,9 @@
                                         <integer key="value" value="2000"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSignUp:" destination="naA-q6-koh" eventType="touchUpInside" id="TOL-1g-RUc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -117,8 +127,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="J3M-Tf-Paa"/>
                     <connections>
-                        <outlet property="signInButton" destination="zzt-pg-7u9" id="7uc-n2-CKj"/>
-                        <outlet property="signUpButton" destination="4vR-2e-1Q9" id="Tmz-Im-eRf"/>
+                        <outlet property="passwordField" destination="kxo-oI-C8E" id="v9a-uc-ECO"/>
+                        <outlet property="usernameField" destination="h7J-a1-BnN" id="e8o-5h-3Pg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiU-s0-d4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,8 +156,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oxb-cf-gfL" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="JGN-kD-Ay9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sUf-eD-KLh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
