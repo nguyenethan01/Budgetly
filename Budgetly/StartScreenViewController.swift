@@ -9,13 +9,14 @@
 import UIKit
 
 class StartScreenViewController: UIViewController {
-
+    
     @IBOutlet weak var getStartedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         getStartedButton.layer.cornerRadius = 22
+
         // Do any additional setup after loading the view.
     }
     
