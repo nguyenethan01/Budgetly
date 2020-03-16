@@ -17,6 +17,8 @@
 		3D5BB38F241744BC0032ADE8 /* BudgetlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BB38E241744BC0032ADE8 /* BudgetlyTests.swift */; };
 		3D5BB39A241744BC0032ADE8 /* BudgetlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BB399241744BC0032ADE8 /* BudgetlyUITests.swift */; };
 		BA9C4830241EF85D00E4AFEF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C482F241EF85D00E4AFEF /* StartScreenViewController.swift */; };
+		BA9C4832241EF9D800E4AFEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C4831241EF9D800E4AFEF /* LoginViewController.swift */; };
+		BA9C4834241EFA5200E4AFEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C4833241EFA5200E4AFEF /* HomeViewController.swift */; };
 		E6B8506B0284DDDA377DA7B7 /* Pods_Budgetly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2FE88ACB51EA024CF6E5D8 /* Pods_Budgetly.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		559582C9EC8C7B9456D9D068 /* Pods-Budgetly-BudgetlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budgetly-BudgetlyUITests.release.xcconfig"; path = "Target Support Files/Pods-Budgetly-BudgetlyUITests/Pods-Budgetly-BudgetlyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		929E1AA3B61C46D6E904E221 /* Pods-BudgetlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetlyTests.debug.xcconfig"; path = "Target Support Files/Pods-BudgetlyTests/Pods-BudgetlyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9C482F241EF85D00E4AFEF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		BA9C4831241EF9D800E4AFEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BA9C4833241EFA5200E4AFEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D028409B120F35BF1516816F /* Pods_Budgetly_BudgetlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Budgetly_BudgetlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EBC8A6A1ECF5A37B73F0BC /* Pods-Budgetly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budgetly.debug.xcconfig"; path = "Target Support Files/Pods-Budgetly/Pods-Budgetly.debug.xcconfig"; sourceTree = "<group>"; };
 		F50670A22D6E1EBFBB9A8821 /* Pods-Budgetly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budgetly.release.xcconfig"; path = "Target Support Files/Pods-Budgetly/Pods-Budgetly.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				3D5BB382241744BC0032ADE8 /* LaunchScreen.storyboard */,
 				3D5BB385241744BC0032ADE8 /* Info.plist */,
 				BA9C482F241EF85D00E4AFEF /* StartScreenViewController.swift */,
+				BA9C4831241EF9D800E4AFEF /* LoginViewController.swift */,
+				BA9C4833241EFA5200E4AFEF /* HomeViewController.swift */,
 			);
 			path = Budgetly;
 			sourceTree = "<group>";
@@ -407,6 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9C4834241EFA5200E4AFEF /* HomeViewController.swift in Sources */,
+				BA9C4832241EF9D800E4AFEF /* LoginViewController.swift in Sources */,
 				BA9C4830241EF85D00E4AFEF /* StartScreenViewController.swift in Sources */,
 				3D5BB378241744B90032ADE8 /* AppDelegate.swift in Sources */,
 				3D5BB37A241744B90032ADE8 /* SceneDelegate.swift in Sources */,

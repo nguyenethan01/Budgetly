@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="126.38680659670166"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="qGy-su-sIM">
             <objects>
-                <viewController id="naA-q6-koh" sceneMemberID="viewController">
+                <viewController id="naA-q6-koh" customClass="LoginViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qlo-bh-ohg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,15 +116,19 @@
                         <viewLayoutGuide key="safeArea" id="EUU-gx-lfE"/>
                     </view>
                     <navigationItem key="navigationItem" id="J3M-Tf-Paa"/>
+                    <connections>
+                        <outlet property="signInButton" destination="zzt-pg-7u9" id="7uc-n2-CKj"/>
+                        <outlet property="signUpButton" destination="4vR-2e-1Q9" id="Tmz-Im-eRf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiU-s0-d4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600.8" y="125.4872563718141"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="NR8-oN-fut">
             <objects>
-                <viewController id="UY1-ti-zYD" sceneMemberID="viewController">
+                <viewController id="UY1-ti-zYD" customClass="HomeViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89p-LY-tK5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
