@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -137,87 +137,176 @@
             </objects>
             <point key="canvasLocation" x="1600.8" y="125.4872563718141"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="NR8-oN-fut">
             <objects>
-                <viewController id="UY1-ti-zYD" customClass="HomeViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="UY1-ti-zYD" customClass="HomeViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89p-LY-tK5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Budget!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-6W-SXf">
-                                <rect key="frame" x="16" y="58" width="270" height="53"/>
+                                <rect key="frame" x="16" y="20" width="270" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                 <color key="textColor" red="0.0" green="0.70847602740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our mission is to help and inform college students on how to budget their money wisely." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItY-VK-aZ7">
-                                <rect key="frame" x="16" y="108" width="343" height="57"/>
+                                <rect key="frame" x="16" y="70" width="343" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="xL6-NC-xvD">
-                                <rect key="frame" x="16" y="173" width="343" height="194"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="xL6-NC-xvD">
+                                <rect key="frame" x="16" y="161" width="343" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-JP-5W6">
-                                <rect key="frame" x="16" y="383" width="343" height="194"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-JP-5W6">
+                                <rect key="frame" x="16" y="371" width="343" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.24313725489999999" green="0.3921568627" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn How to Budget" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-5p-sXU">
-                                <rect key="frame" x="201" y="425" width="145" height="111"/>
+                                <rect key="frame" x="201" y="413" width="145" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="learn_finance_asset" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-Hi-DSP">
-                                <rect key="frame" x="16" y="425" width="177" height="127"/>
+                                <rect key="frame" x="16" y="413" width="177" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="budget_asset" translatesAutoresizingMaskIntoConstraints="NO" id="XNH-HT-GcJ">
-                                <rect key="frame" x="25" y="203" width="159" height="134"/>
+                                <rect key="frame" x="25" y="191" width="159" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly Budget" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8A-6h-pZZ">
-                                <rect key="frame" x="217" y="215" width="113" height="111"/>
+                                <rect key="frame" x="217" y="203" width="113" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIJ-RL-wGz" userLabel="Breakdown Button">
+                                <rect key="frame" x="16" y="161" width="343" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="breakdownButtonTap:" destination="UY1-ti-zYD" eventType="touchUpInside" id="Fja-F1-OzR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoo-Ut-CPn" userLabel="Guide Button">
+                                <rect key="frame" x="16" y="371" width="343" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="guideButtonTap:" destination="UY1-ti-zYD" eventType="touchUpInside" id="8ri-lZ-8Jd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Otv-M2-zlI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" selectedImage="house" id="0gw-f1-NtU">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="0gw-f1-NtU">
                         <color key="badgeColor" red="0.24313725489999999" green="0.3921568627" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="BKj-gX-NQC"/>
+                    <connections>
+                        <outlet property="budgetGuideImageView" destination="pfi-JP-5W6" id="H81-oP-4TC"/>
+                        <outlet property="monthlyBudgetImageView" destination="xL6-NC-xvD" id="Q6K-Ml-b0t"/>
+                        <segue destination="dVU-I9-24O" kind="show" identifier="guideSegue" id="D0g-WP-epA"/>
+                        <segue destination="xL9-NG-3Df" kind="show" identifier="breakdownSegue" id="12a-do-683"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83w-sx-dbr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4245.6000000000004" y="-179.46026986506749"/>
         </scene>
-        <!--Item-->
+        <!--Guide-->
+        <scene sceneID="Tb9-PY-883">
+            <objects>
+                <viewController id="dVU-I9-24O" customClass="GuideViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CCW-vg-Ql9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="leW-n0-Hcj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Guide" image="book" catalog="system" selectedImage="book" id="SvE-bY-pVW"/>
+                    <navigationItem key="navigationItem" title="Guide" id="MYd-Ji-HsE">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="yoi-4b-jt5">
+                            <connections>
+                                <action selector="homeButton:" destination="dVU-I9-24O" id="fsX-dQ-TbP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMK-GV-Zju" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4246" y="1298"/>
+        </scene>
+        <!--Breakdown-->
         <scene sceneID="qfe-R7-7HJ">
             <objects>
                 <viewController id="xL9-NG-3Df" customClass="ExpenseViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XP9-fP-Cwh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="wTo-hQ-9vH">
+                                <rect key="frame" x="16" y="95" width="343" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sweet! That's $120 less than what you spent last month." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-OJ-hne">
+                                <rect key="frame" x="27" y="220" width="320" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've spent $1000 so far this month." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyw-sa-zMa">
+                                <rect key="frame" x="52" y="168" width="270" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spending" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oP-Sk-Jo4">
+                                <rect key="frame" x="52" y="95" width="270" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="January Spending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfQ-gs-37X">
+                                <rect key="frame" x="82" y="333" width="211" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="n1m-er-h76"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="xsV-J3-Xfa"/>
+                    <tabBarItem key="tabBarItem" title="Expenses" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="VGh-H4-Aym"/>
+                    <navigationItem key="navigationItem" title="Breakdown" id="kv1-7M-bld">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="GHO-NB-hyq">
+                            <connections>
+                                <action selector="homeButton:" destination="xL9-NG-3Df" id="Sge-0g-Scb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="spendingImageView" destination="wTo-hQ-9vH" id="Zxu-fE-uld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umq-PQ-o1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4228" y="573"/>
+            <point key="canvasLocation" x="4246" y="563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a2v-Rb-YsN">
@@ -260,7 +349,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="VWb-zE-bZE">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2To-oE-L3t" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="2To-oE-L3t" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="TEH-jt-VOY"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yoz-k0-jEL">
@@ -270,7 +359,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="UY1-ti-zYD" kind="relationship" relationship="viewControllers" id="HFm-LQ-ciw"/>
-                        <segue destination="xL9-NG-3Df" kind="relationship" relationship="viewControllers" id="6z6-Zn-bdR"/>
+                        <segue destination="xL9-NG-3Df" kind="relationship" relationship="viewControllers" id="vcU-at-y5M"/>
+                        <segue destination="dVU-I9-24O" kind="relationship" relationship="viewControllers" id="0gI-XW-hfV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvK-2Y-YO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -280,9 +370,14 @@
     </scenes>
     <resources>
         <image name="LaunchScreenGradient" width="138" height="245"/>
+        <image name="book" catalog="system" width="64" height="50"/>
         <image name="budget_asset" width="341" height="298"/>
         <image name="dollarsign.circle" catalog="system" width="64" height="60"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="learn_finance_asset" width="348.5" height="291"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="12a-do-683"/>
+        <segue reference="D0g-WP-epA"/>
+    </inferredMetricsTieBreakers>
 </document>

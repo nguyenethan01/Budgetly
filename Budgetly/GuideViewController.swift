@@ -1,31 +1,26 @@
 //
-//  ExpenseViewController.swift
+//  GuideViewController.swift
 //  Budgetly
 //
-//  Created by Mingjia Wang on 3/15/20.
+//  Created by Mingjia Wang on 3/22/20.
 //  Copyright © 2020 nguyenethan01. All rights reserved.
 //
 
 import UIKit
 
-class ExpenseViewController: UIViewController {
-
-    @IBOutlet weak var spendingImageView: UIImageView!
+class GuideViewController: UIViewController {
 
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        spendingImageView.layer.cornerRadius = 10
-        spendingImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
     @IBAction func homeButton(_ sender: Any) {
         performSegue(withIdentifier: "homeSegue", sender: self)
     }
-
+    
     /*
     // MARK: - Navigation
 

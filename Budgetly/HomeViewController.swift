@@ -10,13 +10,31 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var monthlyBudgetImageView: UIImageView!
+    @IBOutlet weak var budgetGuideImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        monthlyBudgetImageView.layer.cornerRadius = 10
+        monthlyBudgetImageView.clipsToBounds = true
+        budgetGuideImageView.layer.cornerRadius = 10
+        budgetGuideImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func breakdownButtonTap(_ sender: Any) {
+        print("this was tapped")
+        self.tabBarController?.selectedIndex = 1
+        
+    }
+    @IBAction func guideButtonTap(_ sender: Any) {
+        print("this was tapped")
+        self.tabBarController?.selectedIndex = 2
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
