@@ -8,7 +8,8 @@ target 'Budgetly' do
   # Pods for Budgetly
   pod "Parse"
   pod "AlamofireImage"
-
+  pod "Charts"
+  
   target 'BudgetlyTests' do
     inherit! :search_paths
     # Pods for testing
