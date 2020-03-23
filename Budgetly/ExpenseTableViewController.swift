@@ -18,20 +18,9 @@ class ExpenseTableViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
-        let currentUser = PFUser.current()
-        
         let query = PFQuery(className: "Items")
-        //.whereKey("author", equalTo: currentUser!)
+        query.whereKey("author", equalTo: PFUser.current())
         query.limit = 200
-        print("making query")
-//        query.findObjectsInBackground { (expenses, error) in
-//            if expenses != nil {
-//                self.expenses = expenses!
-//                self.tableView.reloadData()
-//            }
-//        }
-//        
         
         query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
             if let error = error {
@@ -59,6 +48,7 @@ class ExpenseTableViewController: UIViewController, UITableViewDelegate, UITable
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 70
         // Do any additional setup after loading the view.
     }
     
