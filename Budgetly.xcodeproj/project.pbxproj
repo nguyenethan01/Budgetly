@@ -17,6 +17,7 @@
 		3D5BB38F241744BC0032ADE8 /* BudgetlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BB38E241744BC0032ADE8 /* BudgetlyTests.swift */; };
 		3D5BB39A241744BC0032ADE8 /* BudgetlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BB399241744BC0032ADE8 /* BudgetlyUITests.swift */; };
 		BA5F75C5241F3B18007E403E /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F75C4241F3B18007E403E /* ExpenseViewController.swift */; };
+		BA78BBD5242865C000A6CD2A /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78BBD4242865C000A6CD2A /* ExpenseTableViewController.swift */; };
 		BA9C4830241EF85D00E4AFEF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C482F241EF85D00E4AFEF /* StartScreenViewController.swift */; };
 		BA9C4832241EF9D800E4AFEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C4831241EF9D800E4AFEF /* LoginViewController.swift */; };
 		BA9C4834241EFA5200E4AFEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C4833241EFA5200E4AFEF /* HomeViewController.swift */; };
@@ -62,6 +63,7 @@
 		559582C9EC8C7B9456D9D068 /* Pods-Budgetly-BudgetlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budgetly-BudgetlyUITests.release.xcconfig"; path = "Target Support Files/Pods-Budgetly-BudgetlyUITests/Pods-Budgetly-BudgetlyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		929E1AA3B61C46D6E904E221 /* Pods-BudgetlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetlyTests.debug.xcconfig"; path = "Target Support Files/Pods-BudgetlyTests/Pods-BudgetlyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA5F75C4241F3B18007E403E /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
+		BA78BBD4242865C000A6CD2A /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewController.swift; sourceTree = "<group>"; };
 		BA9C482F241EF85D00E4AFEF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		BA9C4831241EF9D800E4AFEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BA9C4833241EFA5200E4AFEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				BA5F75C4241F3B18007E403E /* ExpenseViewController.swift */,
 				BACF4D3C242823C3000E6E68 /* GuideViewController.swift */,
 				BACF4D3E24283814000E6E68 /* NewExpenseViewController.swift */,
+				BA78BBD4242865C000A6CD2A /* ExpenseTableViewController.swift */,
 			);
 			path = Budgetly;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9C4834241EFA5200E4AFEF /* HomeViewController.swift in Sources */,
+				BA78BBD5242865C000A6CD2A /* ExpenseTableViewController.swift in Sources */,
 				BA9C4832241EF9D800E4AFEF /* LoginViewController.swift in Sources */,
 				BACF4D3F24283814000E6E68 /* NewExpenseViewController.swift in Sources */,
 				BA9C4830241EF85D00E4AFEF /* StartScreenViewController.swift in Sources */,

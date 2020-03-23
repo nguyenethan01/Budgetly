@@ -415,7 +415,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="n1m-er-h76"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Expenses" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="VGh-H4-Aym"/>
+                    <tabBarItem key="tabBarItem" title="Month lyOverview" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="VGh-H4-Aym"/>
                     <navigationItem key="navigationItem" title="Breakdown" id="kv1-7M-bld"/>
                     <connections>
                         <outlet property="spendingImageView" destination="wTo-hQ-9vH" id="Zxu-fE-uld"/>
@@ -424,6 +424,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umq-PQ-o1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4246" y="563"/>
+        </scene>
+        <!--All Expenses-->
+        <scene sceneID="8iq-3v-WEl">
+            <objects>
+                <viewController id="wXS-Ks-5dF" customClass="ExpenseTableViewController" customModule="Budgetly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yVT-nf-pl1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="b2c-k3-r4p"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="All Expenses" image="rectangle.grid.1x2" catalog="system" selectedImage="rectangle.grid.1x2" id="kQ6-A1-oWC"/>
+                    <navigationItem key="navigationItem" title="All Expenses" id="Ljl-tu-kaS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgr-8U-LEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4246" y="1997"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a2v-Rb-YsN">
@@ -485,6 +502,7 @@
                         <segue destination="UY1-ti-zYD" kind="relationship" relationship="viewControllers" id="HFm-LQ-ciw"/>
                         <segue destination="xL9-NG-3Df" kind="relationship" relationship="viewControllers" id="vcU-at-y5M"/>
                         <segue destination="dVU-I9-24O" kind="relationship" relationship="viewControllers" id="0gI-XW-hfV"/>
+                        <segue destination="wXS-Ks-5dF" kind="relationship" relationship="viewControllers" id="sjk-cE-tlP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvK-2Y-YO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -501,6 +519,7 @@
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="learn_finance_asset" width="348.5" height="291"/>
         <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="rectangle.grid.1x2" catalog="system" width="64" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vcU-at-y5M"/>
