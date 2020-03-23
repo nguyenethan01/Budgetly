@@ -10,11 +10,13 @@ PODS:
     - Parse/Core (= 1.17.3)
   - Parse/Core (1.17.3):
     - Bolts/Tasks (~> 1.9)
+  - RSSelectionMenu (6.1.0)
 
 DEPENDENCIES:
   - AlamofireImage
   - Charts
   - Parse
+  - RSSelectionMenu
 
 SPEC REPOS:
   trunk:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - Bolts
     - Charts
     - Parse
+    - RSSelectionMenu
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -30,7 +33,8 @@ SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
+  RSSelectionMenu: dac4fa365e4bbd95c0eccd0b6ff51a623a22a1c6
 
-PODFILE CHECKSUM: c0c9cf4c2a3f3bb06257bea980007c2d4a7caa11
+PODFILE CHECKSUM: 48f2919fa7d034c2614cb2b15675f966326ed475
 
 COCOAPODS: 1.8.4

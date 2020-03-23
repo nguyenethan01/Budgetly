@@ -9,6 +9,7 @@ target 'Budgetly' do
   pod "Parse"
   pod "AlamofireImage"
   pod "Charts"
+  pod "RSSelectionMenu"
   
   target 'BudgetlyTests' do
     inherit! :search_paths

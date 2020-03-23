@@ -8,22 +8,25 @@
 
 import UIKit
 import Parse
+import RSSelectionMenu
 
 class NewExpenseViewController: UIViewController {
     
     
     @IBOutlet weak var nameField: UITextField!
-    
     @IBOutlet weak var amountField: UITextField!
+    @IBOutlet weak var categoryButton: UIButton!
+    @IBOutlet weak var categoryLabel: UILabel!
     
-    @IBOutlet weak var categoryField: UITextField!
+    var selectedNames: [String] = []
+    
     
     @IBAction func onSubmitButton(_ sender: Any) {
         
         let item = PFObject(className: "Items")
         item["name"] = nameField.text
         item["amount"] = amountField.text
-        item["category"] = categoryField.text
+        item["category"] = categoryLabel.text
         item["author"]=PFUser.current()
         
         item.saveInBackground { (success, error) in
@@ -35,13 +38,37 @@ class NewExpenseViewController: UIViewController {
         }
     }
     
-    
+    @IBAction func selectCategory(_ sender: Any) {
+        
+        let data: [String] = ["Education", "Insurance", "Food & Drink", "Entertainment", "Personal", "Subscriptions", "Travel", "Utilities, Mortgage, & Taxes", "Other"] 
+        
+        
+        let menu = RSSelectionMenu(dataSource: data) { (cell, name, indexPath) in
+            cell.textLabel?.text = name
+        }
+        
+        menu.setSelectedItems(items: selectedNames) { (name, index, selected, selectedItems) in
+            self.selectedNames = selectedItems
+            if self.selectedNames.count > 0 {
+                self.categoryLabel.text = self.selectedNames[0]
+                    
+            } 
+        }
+        
+        menu.show(from: self)
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
+    
+    
     
 
     /*
