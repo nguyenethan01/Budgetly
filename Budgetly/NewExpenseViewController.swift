@@ -36,7 +36,7 @@ class NewExpenseViewController: UIViewController {
         
         item.saveInBackground { (success, error) in
             if success{
-                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popToRootViewController(animated: true)
             }else{
                 print("error!")
             }
