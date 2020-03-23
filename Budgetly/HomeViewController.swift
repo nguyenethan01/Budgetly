@@ -24,15 +24,16 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func breakdownButtonTap(_ sender: Any) {
-        print("this was tapped")
         self.tabBarController?.selectedIndex = 1
         
     }
     @IBAction func guideButtonTap(_ sender: Any) {
-        print("this was tapped")
         self.tabBarController?.selectedIndex = 2
     }
     
+    @IBAction func addItem(_ sender: Any) {
+        performSegue(withIdentifier: "addItemSegue", sender: self)
+    }
     
     
     /*
