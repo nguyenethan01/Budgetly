@@ -12,7 +12,8 @@ class ExpenseViewController: UIViewController {
 
     @IBOutlet weak var spendingImageView: UIImageView!
 
-
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,10 @@ class ExpenseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.topItem?.title = "Breakdown"
     }
-
+    
+    @IBAction func seeAllExpenses(_ sender: Any) {
+        performSegue(withIdentifier: "allExpensesSegue", sender: self)
+    }
 
     /*
     // MARK: - Navigation
