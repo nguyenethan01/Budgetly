@@ -27,7 +27,12 @@ class NewExpenseViewController: UIViewController {
         item["name"] = nameField.text
         item["amount"] = amountField.text
         item["category"] = categoryLabel.text
-        item["author"] = PFUser.current()
+        item["author"]=PFUser.current()
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL"
+        let nameOfMonth = dateFormatter.string(from: now)
+        item["month"] = nameOfMonth
         
         item.saveInBackground { (success, error) in
             if success{
