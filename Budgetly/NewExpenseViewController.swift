@@ -27,7 +27,7 @@ class NewExpenseViewController: UIViewController {
         item["name"] = nameField.text
         item["amount"] = amountField.text
         item["category"] = categoryLabel.text
-        item["author"]=PFUser.current()
+        item["author"] = PFUser.current()
         
         item.saveInBackground { (success, error) in
             if success{
