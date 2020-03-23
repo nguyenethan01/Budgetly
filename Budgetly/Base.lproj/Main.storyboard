@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -411,19 +411,25 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxf-63-NTl" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="62" y="355" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="n1m-er-h76"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Month lyOverview" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="VGh-H4-Aym"/>
+                    <tabBarItem key="tabBarItem" title="Monthly Overview" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="VGh-H4-Aym"/>
                     <navigationItem key="navigationItem" title="Breakdown" id="kv1-7M-bld"/>
                     <connections>
+                        <outlet property="pieChart" destination="vxf-63-NTl" id="f1N-aU-bP0"/>
                         <outlet property="spendingImageView" destination="wTo-hQ-9vH" id="Zxu-fE-uld"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umq-PQ-o1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4246" y="563"/>
+            <point key="canvasLocation" x="4245.6000000000004" y="562.66866566716647"/>
         </scene>
         <!--All Expenses-->
         <scene sceneID="8iq-3v-WEl">
