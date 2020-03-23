@@ -22,9 +22,10 @@ class ExpenseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func homeButton(_ sender: Any) {
-        performSegue(withIdentifier: "homeSegue", sender: self)
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Breakdown"
     }
+
 
     /*
     // MARK: - Navigation

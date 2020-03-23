@@ -23,16 +23,16 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Home"
+    }
+    
     @IBAction func breakdownButtonTap(_ sender: Any) {
         self.tabBarController?.selectedIndex = 1
         
     }
     @IBAction func guideButtonTap(_ sender: Any) {
         self.tabBarController?.selectedIndex = 2
-    }
-    
-    @IBAction func addItem(_ sender: Any) {
-        performSegue(withIdentifier: "addItemSegue", sender: self)
     }
     
     
