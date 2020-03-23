@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -159,7 +159,7 @@
                                 <rect key="frame" x="186" y="177" width="173" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86L-RV-XBR">
                                 <rect key="frame" x="186" y="256" width="173" height="34"/>
@@ -179,8 +179,17 @@
                         <viewLayoutGuide key="safeArea" id="IQx-98-YJC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Item" id="2ma-He-ojZ">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="cdG-9k-VHD"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="cdG-9k-VHD">
+                            <connections>
+                                <action selector="onSubmitButton:" destination="e9m-RH-SGg" id="GZP-Ws-GOQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountField" destination="qCS-WR-M6t" id="Npl-AU-arc"/>
+                        <outlet property="categoryField" destination="86L-RV-XBR" id="BxP-Bc-Y3r"/>
+                        <outlet property="nameField" destination="gIm-fv-7nC" id="h0K-B3-Qpc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otd-A4-Pbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

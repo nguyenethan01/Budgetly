@@ -7,9 +7,36 @@
 //
 
 import UIKit
+import Parse
 
 class NewExpenseViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var amountField: UITextField!
+    
+    @IBOutlet weak var categoryField: UITextField!
+    
+    @IBAction func onSubmitButton(_ sender: Any) {
+        
+        let item = PFObject(className: "Items")
+        item["name"] = nameField.text
+        item["amount"] = amountField.text
+        item["category"] = categoryField.text
+        item["author"]=PFUser.current()
+        
+        item.saveInBackground { (success, error) in
+            if success{
+                self.dismiss(animated: true, completion: nil)
+            }else{
+                print("error!")
+            }
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
